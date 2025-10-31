@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    width: 80vw;
+    margin: auto;
+}
+
+nav {
+    background: #d9e1f3;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#home{
+    color: rgb(24, 15, 155);
+}
+
+.main{
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(24, 15, 155);
+    padding: .3rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: .8rem;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}  
+
+nav button{
+    background-color: rgb(24, 15, 155);
+    color: #ffffff;
+    border: none;
+    padding: .4rem .4rem;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    
+    width: 100%;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+}
+
+.description{
+    flex: 2;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.poster {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+}
+
+.container{
+    perspective: 800px;
+}
+
+.poster-image{
+    margin-top: 7rem;
+    margin-right: 2rem;
+    object-fit: cover;
+    width: 28rem;
+    border-radius: .6rem;
+    height: 26rem;
+    transform: rotateY(-15deg);
+    transform-origin: left center; /* keeps left edge anchored */
+    transition: transform 0.5s ease;
+    
+}
+
+h3{
+    color: rgb(24, 15, 155);
+}
+
+.description span{
+    font-weight: bold;
+}
+
+.btn{
+    border: none;
+    padding: .4rem .4rem;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer; 
+    transition: all 0.3s ease;   
+}
+
+
+
+#register-btn{
+    background-color: rgb(24, 15, 155);
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+#register-btn:hover{
+    background-color: #ffffff;
+    color: rgb(24, 15, 155);
+    border: 1px solid rgb(24, 15, 155);
+}
+
+#view-schedule-btn{
+    background-color: #ffffff;
+    color: rgb(24, 15, 155);
+    margin-top: 1rem;
+    margin-left: .5rem;
+    border: 1px solid rgb(24, 15, 155);
+}
+
+#view-schedule-btn:hover{
+    background-color: rgb(24, 15, 155);
+    color: #ffffff;
+    border: none;
+}
+
+.details{
+    vertical-align: middle;
+    margin-right: .3rem;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+.details img{
+    margin-right: .4rem;
+    vertical-align: middle;
+}
+
+.buttons{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    
+}
+
+.buttons-image{
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    z-index: 10;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.buttons-image button{
+    border-radius: 17px;
+    height: 2.5rem;
+    padding: 3px 10px;
+    border: 2px solid rgb(24, 15, 155);
+    transition: all 0.3s ease;
+}
+
+.buttons-image button img{
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.buttons-image button:hover{
+    transform: scale(1.1);
+}

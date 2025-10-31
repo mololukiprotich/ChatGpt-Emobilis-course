@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Perspective Tilt</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f3f4f6;
+      gap: 3rem;
+      font-family: sans-serif;
+    }
+
+    .tilt-container {
+      perspective: 1000px;
+      text-align: center;
+    }
+
+    .tilt-img {
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Right-side perspective (left edge smaller) */
+    .tilt-right .tilt-img {
+      transform: rotateY(-18deg) scale(1.05);
+      transform-origin: left center;
+    }
+
+    /* Left-side perspective (right edge smaller) */
+    .tilt-left .tilt-img {
+      transform: rotateY(18deg) scale(1.05);
+      transform-origin: right center;
+    }
+
+    /* Optional hover effect */
+    .tilt-container:hover .tilt-img {
+      transform: rotateY(0deg) scale(1.1);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      color: #374151;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tilt-container tilt-right">
+    <img src="https://picsum.photos/400/300?random=1" alt="Tilt Right" class="tilt-img" />
+    <h3>Right Perspective</h3>
+  </div>
+
+  <div class="tilt-container tilt-left">
+    <img src="https://picsum.photos/400/300?random=2" alt="Tilt Left" class="tilt-img" />
+    <h3>Left Perspective</h3>
+  </div>
+
+</body>
+</html>
