@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="form">
+        
+        <form action="#" method="POST">
+            <h1>Register</h1>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Username" id="username" name="username" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" id="password" name="password" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Age" id="age" name="age" min="1" max="120"><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!-- radio for city Nakuru, Nairobi, Mombasa, Kisumu-->
+            <label for="city">City:</label>
+            <input type="radio" id="nairobi" name="city" value="nairobi" required>
+            <label for="nairobi">Nairobi</label>  
+            <input type="radio" id="mombasa" name="city" value="mombasa">
+            <label for="mombasa">Mombasa</label>
+            <input type="radio" id="kisumu" name="city" value="kisumu">
+            <label for="kisumu">Kisumu</label>
+            <input type="radio" id="nakuru" name="city" value="nakuru">
+            <label for="nakuru">Nakuru</label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

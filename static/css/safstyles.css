@@ -1,0 +1,49 @@
+div{
+    margin: 0;
+    padding: 0;
+    background: green;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content;
+}
+
+li{
+    display: inline-block;
+    padding: 8px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 10px;
+    
+}
+
+li a:hover{
+    background-color: black;
+}
+
+button{
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
